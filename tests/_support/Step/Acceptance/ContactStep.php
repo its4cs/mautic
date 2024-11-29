@@ -78,7 +78,7 @@ class ContactStep extends \AcceptanceTester
         // Click the dropdown button for bulk actions
         $I->click('//*[@id="leadTable"]/thead/tr/th[1]/div/div/button/i');
         // Select the desired option from the dropdown menu
-        $I->click("//*[@id='leadTable']/thead/tr/th[1]/div/div/ul/li[$option]/a/span/span");
+        $I->click("//*[@id='leadTable']/thead/tr/th[1]/div/div/ul/li[$option]/a/span");
     }
 
     /**
@@ -89,8 +89,8 @@ class ContactStep extends \AcceptanceTester
     public function selectOptionFromDropDownContactsPage($option): void
     {
         $I = $this;
-        $I->click('#toolbar > div.std-toolbar.btn-group > button');
-        $I->click("//*[@id='toolbar']/div[1]/ul/li[$option]/a/span/span");
+        $I->click("//*[@id='page-list-actions']");
+        $I->click("//*[@id='page-list-wrapper']/div[1]/div/div[2]/ul/li[$option]/a");
     }
 
     /**
