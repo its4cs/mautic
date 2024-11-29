@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#i7fg {
+    background-color: #d493f0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ieoh {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#i6vk {
+    min-height: 30px;
+}
+
+#isauz {
+    font-family: 'Ubuntu', Tahoma, Verdana, Segoe, sans-serif;
+    color: #e15513;
+    font-size: 33px;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#iufy {
+    font-family: 'Roboto', Tahoma, Verdana, Segoe, sans-serif;
+    color: #058329;
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+    #ieoh {
+        width: 95%;
+    }
+    
+    #isauz {
+        font-size: 28px;
+    }
+    
+    #iufy {
+        font-size: 18px;
+    }
+}
